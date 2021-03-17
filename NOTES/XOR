@@ -1,0 +1,29 @@
+This simple neural network was created to solve the XOR equation.
+
+The XOR equation (aka: Exclusive Or or Exclusive Disjunction) is a logical operation that outputs true only when inputs differ (one is true, the other is false).
+
+Ex: 
+// input 0 0, output 0
+// input 0 1, output 1
+// input 1 0, output 1
+// input 1 1, output 0
+
+This operation for me distills the crucial element of machine learning. The ability to distinguish "thing" from "no thing" is the core function of the organic brain and informs all subsequent decisions. It seems to me that any intelligence must have this ability first. 
+
+
+Brain.js (saved as 'brain') can:
+Create new Neural Networks
+Train (propagate and backpropagate, see TRAIN)
+Run (see RUN)
+
+In my code, I first create a new Neural Network.
+I then asked it to train using the set of data above.
+Finally, I asked it to run with the first set of inputs ([0, 0]) and console log the result.
+
+The "ideal" result is 0, but Neural Networks have real difficulty getting to 0 or 1 because its input/weight calculation is so complex. The best we can do is ALMOST 0 or ALMOST 1. 
+
+console.log(net.run([0, 0])) returns [0.05858641117811203], close to 0.
+
+If you console log this multiple times, you will get slightly different results each time, but they will always be close to either 0 or 1. 
+
+

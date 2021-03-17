@@ -1,0 +1,14 @@
+You can conceive of each neuron like the frame of a movie. Each movie frame is the same size. 
+
+height + width = frame
+frame = constant size
+
+The frames, added together, are called the DEPTH.
+frames = depth
+depth = context
+
+context will repeat and this context is known as RECURRENT. 
+
+A single movie frame out of context is difficult to understand. 
+But if you look at a series of frames, you may be able to predict what the next frame will look like. 
+This is essentially what we are asking the computer to do. Continue a pattern over time!

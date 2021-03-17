@@ -1,0 +1,15 @@
+Networks are composed of layers:
+
+-Input layer
+-Hidden layers
+-Output layer
+
+Brain.js basically describes the input and output layers for you, but you can decide how many hidden layers you want. That's where the changes happen. If we were talking about a human brain, hidden layers are "where the ideas are". 
+
+const net = new brain.NeuralNetwork({ hiddenLayers: [3] });
+//the [3] indicates three neurons in one layer, not 3 layers.
+//more layers would look like:
+const net = new brain.NeuralNetwork({ hiddenLayers: [2, 2] });
+
+The more hidden layers, the longer it takes to train. 
+

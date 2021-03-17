@@ -1,0 +1,24 @@
+Problem: we want to throw a ball that hits a goal.
+
+What goes into throwing a ball into a goal?
+
+We'll need to know:
+
+-The location of the goal
+-the location of the ball
+-how far the ball needs to go
+-how much energy to put behind it
+
+Making this prediction is FORWARD PROPAGATION.
+
+Once we see the outcome, we can see how far we were off from our actual goal. 
+Measuring that difference is Step 1 of BACK PROPAGATION. 
+Step 2 is considering what we will do next. 
+
+Then we will throw the ball again (propagate).
+And re-measure (backpropagate).
+
+The measurement itself is referred to as ERROR. 
+You can log out the error using a log function. 
+
+This process is what goes into the Brain method, train. 
